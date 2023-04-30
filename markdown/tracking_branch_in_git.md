@@ -17,5 +17,3 @@
 
 - `git remote show <remote repo name>` which will show the `urls for fetch and push` but we will also be see the info about the `tracking branch as well`
 
-- 
-
