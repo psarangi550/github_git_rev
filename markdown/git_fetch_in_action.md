@@ -43,3 +43,6 @@
 
 - if we delete the `local tracking branch` then we can do  that by using the command as `git branch -d <local tracking branch which we want to remove>`
 
+- when we fetch the `remote branch` using the command as `git fetch` then we can see `only the push and fetch url not the pull url ` when we use the command as `git remote show <remote name>`
+
+- because the `git pull happended partially `
