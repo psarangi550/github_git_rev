@@ -33,5 +33,56 @@
 
 - if there were changes in the  `local branch` and the `remote branch` then we will  get the `3-way Merge` in the `local branch` and a new `merge commit` will be created 
 
+- `git pull -v` which will show the verbose show all the changes done by the `git pull` command
+
+#### <ins> What is FETCH_HEAD in git pull command </ins> ####
+
+- we can also put the verbose option with the `git fetch` command as `git fetch -v`
+
+- in order to see that `FETCH_HEAD` we have to go for the `.git` folder where we can see the folder as `FETCH_HEAD`
+
+- we also have the `HEAD` folder inside the `.git` folder which been pointing to the `current checkout branch`
+
+- when we see the `FETCH_HEAD` file by using the command as `cat FETCH_HEAD` command then we can see the `current checkout branch remote SHA1 code and  branch name and url` and also the `other branch SHA1 code  and other branch and url of that branch `
+
+- when we use the `git pull` command then git usually do 2 things
+
+    - git wrote the `git fetch ` command and get the `SHA1 and branch and url ` into the `FETCH_HEAD` folder 
+
+    - inside the `FETCH_HEAD` file we can see the `current branch (remote) SHA1 code and branch name and url` also other branches which marked as `not  for merge` with `SHA1 code and branch name and url`
+
+    - then git perform the `git merge` command so that `git merge FETCH_HEAD` which will ignore the `not for merge` branch and only perform the `git merge FETCH_HEAD` for the currently checkout branch
+
+    - when we do the `git pull` then git compare the `commit of thr local branch` is in sync with `commit of the Remote branch which can be fetched from the FETCH_HEAD file` and if same then says as `Already up to date`
+
+
+#### <ins>How to Use the `Git Pull` with Fast Forward Merge </ins> #####
+
+- we can create a `new folder` in the `github` by using the `<foldername>/` with that we can create a new folder 
+
+- before doing the `git pull` we must checked into the `branch` from where we want to do the `git pull`
+
+- when we use the `git pull` where the changes been made in the `remote repo` but not in the `local repo` then `git pull` command will upload the `local branch` onto the `remote branch` and `compare the same`
+
+- then once the `compare` been done and confir that in the `local branch` there were no changes then only `git fetch` command being executed
+
+- it will show the `new commit` of the `checkout branch` based on the `remote changes` that being refered
+
+- we can see the `particular branch contents ` nby using the command as `ls -la <branch name>` which will show the content of the `content of the working directory`
+
+- we can see that `staging Area Content` using the command as 
+
+    ```
+        
+        git ls-files -s
+
+    ```
+
+- when we do the `ff merge` then it will just change the `pointer of the local commit` to the `remote commit that was extensively made `
+
+#### <ins>How to Perform the `Git Pull` with 3 way Merge Approach </ins> ####
+
 - 
+
+
 
