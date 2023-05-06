@@ -82,7 +82,25 @@
 
 #### <ins>How to Perform the `Git Pull` with 3 way Merge Approach </ins> ####
 
-- 
+- when we do the `git fetch -v` then the contents of the `remote repository` which been changed will be save to the `.git/objects/<first 2 letter of the remote repo commits>`
 
+- but when we do the `git fetch -v` then it will not `merge` the changes of commit present in `.git/objects/<2 letters od the remote repo>` inside that rest of the `commit details` into the `local branch`
+
+- we can see the `author and commit details` by using the command as `git cat-file -p <few letter of the commits>`
+
+- we can see the type of object by using the command as `git cat-file -t <few letters of the commit id >`
+
+- when we made the `git fetch -v` then it also changes the `FETCH_HEAD` content as well with the latest commit details 
+
+- when merge happended using the `get merge FETCH_HEAD` using the `3 way merge statergy` then it will be displayed as the `Merge made by recursive Statergy`
+
+- when the merge happended using the `3 way merge` then there will be new commit which will point to the `2 parent commits` one for the `local branch` and `one for the remote branch`
+
+- if we have made the changes `locally` then we need to push the changes at the end by using the command as `git push ` command otherwise the `remote branch` will not be aware about the `local changes` even though the `local changes aware about the remote changes`
+
+
+#### <ins> How to Solve the Merge Confilct when the Same file being changed locally and Remotelly and Trying to pull those changes out </ins> #####
+
+- 
 
 
