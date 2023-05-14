@@ -52,5 +52,7 @@ and then we can delete the `branch locally` in order to remove the branches
 
 - now when we use the `git branch -vv` then we can see the `tracking branch status updated`
 
+- when the branch available `remotely` in the `.git/refs/remotes/<remote name>/<branch name>` then we can create  that branch `locally` by using the command as `git checkout <remote branch name available in .git/refs/remotes/<remote name>/<branch name>>` rather than saying `git checkout -b <remote branch name available in .git/refs/remotes/<remote name>/<branch name>>`
+
 
 
