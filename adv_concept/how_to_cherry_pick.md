@@ -26,6 +26,10 @@
     - we can either `amend` or `keep` it as it is then `:wq` to exit and the `cherry-pick` been done
     - here the `commit message` will be same as the `commit we have done in the temp branch` but the `commit SHA` will be different as `content of the object` been changed as the `Date and time of the commit being changed `
 
+    - we can use the option as `--no-commit` option to `cherry-pick` command  which will add the `file` that been changed in the `temp branch with the commit` in the `Staging Area` but will not commit to the `local git repo`
+    - we can add and commit it again to make it as tracked and pushj to `local git repo`
+    - we can also see the `git status` with `verbose` option as `git status -v` command but this command will only show the changes in the file which are in the `staging Area` no on the `working Directory`
+
 - **Another Senario Demo**
     
     -  
