@@ -1,3 +1,6 @@
 [submodule "github_pages"]
 	path = github_pages
 	url = .\\github_pages\\
+[submodule "psarangi550.github.io"]
+	path = psarangi550.github.io
+	url = git@github.com:psarangi550/psarangi550.github.io.git
