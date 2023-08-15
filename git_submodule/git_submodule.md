@@ -14,4 +14,6 @@
 
 - while cloning as the submodule we can add as the `git submnodule add <git repo url>` which will clone the repo under the `main parent module` in this case 
 
+- this will create the `submodule as .gitmodule` in 
+
 
